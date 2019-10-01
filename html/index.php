@@ -1,5 +1,6 @@
 <?php
 error_reporting(-1);
+ini_set("date.timezone", getenv('TZ'));
 require "loadmodules.php";
 $zabbixlink = "Please select host group(s)";
 if (isset($_POST["selectHostGroup"])) {
